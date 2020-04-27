@@ -1,15 +1,16 @@
-In this assignment you will implement a YOLO-like object detector on the PASCAL VOC dataset. You will mainly focus on imlementing the yolo loss function and experiment with different base architectures and hyperparameters. Starter kit is provided to help you guide though the steps. 
+In this assignment you will implement a YOLO-like object detector on the PASCAL VOC dataset. You will mainly focus on implementing the yolo loss function and experiment with different base architectures and hyperparameters. Starter kit is provided to help you guide though the steps. 
 
-**PS : Refer to lecture slides for the exact loss function (YOLO V1) to implement.**
+**PS : Refer to lecture slides for the exact loss function (YOLO V1) to implement.** Additional reference material is provided below.
 
 # General Instructions
-1. **Bonus Assignment**: This assignment is not cumpolsary and its aminly for those who want to improve their grade. That said, I **HIGHLY** encourage for everyone to do. I myself learnt a lot from it. 
+1. **Bonus Assignment**: This assignment is not compulsory and it's mainly for those who want to improve their grade. That said, I **HIGHLY** encourage everyone to do it. I myself learnt a lot from it. 
 
 2. **Group Assignment**: This can be done in groups of at most 3. All members of a group will be graded equally.
 
-3. **Two stage submission** : As mentioned in class, submission would be done in two stages. After the end of first stage (due 11:59PM,May 4), you need to submit your best perfroming MAP scores. We will release, the scores of the top three performers after which you will have another week (Stage 2, due 11:59PM, May 11) to improve your model performance. Both stages will have indivdual scores.
+3. **Two stage submission** : As mentioned in class, submission would be done in two stages. After the end of the first stage (Stage 1, due 11:59PM, May 4), you need to submit your best performing MAP scores. We will release the scores of the top three performers after which you will have another week (Stage 2, due 11:59PM, May 11) to improve your model performance. Both stages will have individual scores.
 
-**Important Note:** You are only allowed to use your late days for Stage 1 and NOT for stage 2.
+**Important Note:** You are only allowed to use your late days for stage 1 and NOT for stage 2. Only students who submit the scores by the end of stage 1 will be eligible for additional bonus for top-N (i.e., if you are using late days for Stage 1, your submission will be counted in top-N).
+
 # Data Setup
 
 Once you have cloned this folder, execute the download_data script provided:
@@ -25,7 +26,7 @@ Instructions are provided in the `yolo_loss.py` file to help you guide through t
 
 
 # Training and Testing 
-First and foremost, install all required packages by running the comand:
+First and foremost, install all required packages by running the command:
 
 ```
 pip install -r requirements.txt
@@ -40,17 +41,17 @@ python main.py --name="exp_name" --B=2 --S=14 --learning-rate=0.001 --num-epochs
 where
 
 
-| Arguments        | Description |
+| Arguments        | Description |
 | :-------------------------- |:----------|
-| `--name`     | Experiment name |
-| `--B`     | Number of bounding box predictions per cell |
-| `--S`     | Width/height of network output grid |
-| `--learning-rate`     | Inital learning rate for the model |
-| `--num-epochs`     | Number of epochs you want to train for |
-| `--lambda-coord`     | Yolo loss component coefficient: λ in order to focus more on detection |
-| `--lambda-noobj`     | Yolo loss component coefficient: Down-weight loss from Class probability boxes that don’t contain objects |
+| `--name`     | Experiment name |
+| `--B`     | Number of bounding box predictions per cell |
+| `--S`     | Width/height of network output grid |
+| `--learning-rate`     | Initial learning rate for the model |
+| `--num-epochs`     | Number of epochs you want to train for |
+| `--lambda-coord`     | Yolo loss component coefficient: λ in order to focus more on detection |
+| `--lambda-noobj`     | Yolo loss component coefficient: Down-weight loss from Class probability boxes that don’t contain objects |
 
-This will create model file `<exp_name>_best_detector.pth` which will store weights of the model. Tensorboard logging is also interated, so while training you can check your loss plots through tensorboard by running the command on a different terminal window:
+This will create a model file `<exp_name>_best_detector.pth` which will store weights of the model. Tensorboard logging is also integrated, so while training you can check your loss plots through tensorboard by running the command on a different terminal window:
 
 ```
 tensorboard --logdir=tb_log/ --bind_all
@@ -63,10 +64,10 @@ python main.py --eval --model-path="/path/to/model"
 ```
 where 
 
-| Arguments        | Description |
+| Arguments        | Description |
 | :------------- |:----------|
-| `--eval`     | To indicate that only evaluation needs to be perfromed |
-| `--model-path`     | Relative path to \<exp_name>_best_detector.pth |
+| `--eval`     | To indicate that only evaluation needs to be performed |
+| `--model-path`     | Relative path to \<exp_name>_best_detector.pth |
 
 This will create a `my_solution.csv` which will contain MAP scores for each of the class. 
 
@@ -74,18 +75,18 @@ Once you have implemented the loss and successfully finish one iteration of trai
 
 # Submission Instructions
 
-For each of the stage you need to upload three things on ELMS:
+For each of the stages you need to upload three things on ELMS:
 1. A ZIP of all code files including model file.
 2. `my_solution.csv` - This needs to be uploaded **separately**.
 3. A _brief_ report on the changes you made to boost performance.This needs to be uploaded **separately**.
 
-Please folow all the instructions, failiure to do so will result in deduction of points. 
+Please folow all the instructions, failure to do so will result in deduction of points. 
 
 Due dates:
 1. **Stage 1** - 11:59PM, May 4 (May the force be with you)
 2. **Stage 2** - 11:59PM, May 11
 
-## Ofice hours
+## Office hours
 
 I will be holding a single **combined** office hours on May 4 to clear all doubts. I will have a poll on piazza for the exact timing.
 
