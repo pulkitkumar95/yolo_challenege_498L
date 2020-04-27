@@ -2,7 +2,7 @@ In this assignment you will implement a YOLO-like object detector on the PASCAL 
 
 **PS : Refer to lecture slides for the exact loss function (YOLO V1) to implement.**
 
-##General Instructions
+# General Instructions
 1. **Bonus Assignment**: This assignment is not cumpolsary and its aminly for those who want to improve their grade. That said, I **HIGHLY** encourage for everyone to do. I myself learnt a lot from it. 
 
 2. **Group Assignment**: This can be done in groups of at most 3. All members of a group will be graded equally.
@@ -10,7 +10,7 @@ In this assignment you will implement a YOLO-like object detector on the PASCAL 
 3. **Two stage submission** : As mentioned in class, submission would be done in two stages. After the end of first stage (due 11:59PM,May 4), you need to submit your best perfroming MAP scores. We will release, the scores of the top three performers after which you will have another week (Stage 2, due 11:59PM, May 11) to improve your model performance. Both stages will have indivdual scores.
 
 **Important Note:** You are only allowed to use your late days for Stage 1 and NOT for stage 2.
-##Data Setup
+# Data Setup
 
 Once you have cloned this folder, execute the download_data script provided:
 ```
@@ -24,7 +24,7 @@ Instructions are provided in the `yolo_loss.py` file to help you guide through t
 
 
 
-##Training and Testing 
+# Training and Testing 
 First and foremost, install all required packages by running the comand:
 
 ```
@@ -72,7 +72,7 @@ This will create a `my_solution.csv` which will contain MAP scores for each of t
 
 Once you have implemented the loss and successfully finish one iteration of training, feel free to change other parts of the network to boost the performance of your model.
 
-##Submission Instructions
+# Submission Instructions
 
 For each of the stage you need to upload three things on ELMS:
 1. A ZIP of all code files including model file.
@@ -85,10 +85,10 @@ Due dates:
 1. **Stage 1** - 11:59PM, May 4 (May the force be with you)
 2. **Stage 2** - 11:59PM, May 11
 
-###Ofice hours
+## Ofice hours
 
 I will be holding a single **combined** office hours on May 4 to clear all doubts. I will have a poll on piazza for the exact timing.
 
-##Acknowledgements
+# Acknowledgements
 
 The assignment is inspired from [Assignment 3 Part 2 of CS498](http://slazebni.cs.illinois.edu/fall18/assignment3_part2.html).
