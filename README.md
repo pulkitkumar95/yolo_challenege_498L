@@ -88,6 +88,7 @@ Due dates:
 
 # Additional Resources
 Here are some additional reporces that might help for the assignment:
+1. [Slide 41 of Lecture slides](https://umd.app.box.com/s/uuf22g0whs85p7ivjrp135ml5wf84xpj)
 1. [Original YOLO Paper](https://pjreddie.com/media/files/papers/yolo_1.pdf)
 2. [Great explanation of the Yolo Loss function.](https://stats.stackexchange.com/questions/287486/yolo-loss-function-explanation)
 
