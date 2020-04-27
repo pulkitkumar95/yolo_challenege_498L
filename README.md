@@ -86,6 +86,12 @@ Due dates:
 1. **Stage 1** - 11:59PM, May 4 (May the force be with you)
 2. **Stage 2** - 11:59PM, May 11
 
+# Additional Resources
+Here are some additional reporces that might help for the assignment:
+1. [Original YOLO Paper](https://pjreddie.com/media/files/papers/yolo_1.pdf)
+2. [Great explanation of the Yolo Loss function.](https://stats.stackexchange.com/questions/287486/yolo-loss-function-explanation)
+
+
 ## Office hours
 
 I will be holding a single **combined** office hours on May 4 to clear all doubts. I will have a poll on piazza for the exact timing.
