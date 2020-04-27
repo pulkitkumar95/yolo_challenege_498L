@@ -41,7 +41,7 @@ where
 
 
 | Arguments        | Description |
-| :------------- |:----------|
+| :-------------------------- |:----------|
 | `--name`     | Experiment name |
 | `--B`     | Number of bounding box predictions per cell |
 | `--S`     | Width/height of network output grid |
